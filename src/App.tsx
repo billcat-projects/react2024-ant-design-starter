@@ -1,19 +1,13 @@
-import { Button, message } from 'antd'
+import { Route, Routes } from 'react-router-dom'
+import { HomePage } from './pages/Home'
+import { LoginPage } from './pages/Login'
 
 function App() {
-
-  const [messageApi, contextHolder] = message.useMessage()
-
-  function sayHello() {
-    messageApi.success('hello world')
-  }
-
   return (
-    <>
-      { contextHolder }
-      <Button type="primary" onClick={ sayHello }>Hello</Button>
-
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<LoginPage />} />
+    </Routes>
   )
 }
 
