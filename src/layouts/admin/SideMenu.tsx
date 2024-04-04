@@ -4,6 +4,8 @@ import { Layout, Menu } from 'antd'
 import type { ItemType } from 'antd/lib/menu/hooks/useItems'
 import AIcon from '@/components/AIcon.tsx'
 import { buildOpenKeys } from '@/utils/utils.ts'
+import Logo from '@/layouts/admin/components/Logo.tsx'
+import './SideMenu.less'
 
 const { Sider } = Layout
 
@@ -69,18 +71,22 @@ export function SideMenu({collapsed, menuList}) {
 
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>
-      <div className="demo-logo-vertical" />
-      <Menu
-        theme="dark"
-        mode="inline"
-        selectedKeys={selectedKeys}
-        onClick={doNavigation}
+      {/* 加上这层 div.menu 后刷新页面就不闪屏了 */}
+      <div className="menu">
+        {/*<div className="demo-logo-vertical" />*/}
+        <Logo collapsed={collapsed}></Logo>
+        <Menu
+          theme="dark"
+          mode="inline"
+          selectedKeys={selectedKeys}
+          onClick={doNavigation}
 
-        openKeys={openKeys}
-        onOpenChange={setOpenKeys}
+          openKeys={openKeys}
+          onOpenChange={setOpenKeys}
 
-        items={items}
-      />
+          items={items}
+        />
+      </div>
     </Sider>
   )
 }

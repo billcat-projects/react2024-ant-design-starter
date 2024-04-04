@@ -1,0 +1,31 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* 设置层 100% 会闪屏, 改成 100vh */
+  height: 100vh;
+
+  .logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    .logo-img {
+      width: 30px;
+      margin: 0;
+    }
+    .logo-text {
+      margin: 0 0 0 5px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #dadada;
+      white-space: nowrap;
+    }
+  }
+  .ant-menu-root {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

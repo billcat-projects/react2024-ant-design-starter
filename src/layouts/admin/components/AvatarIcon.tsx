@@ -14,7 +14,7 @@ const AvatarIcon = (props: any) => {
 	interface ModalProps {
 		showModal: (params: { name: number }) => void;
 	}
-	const passRef = useRef<ModalProps>(null);
+	const passwdRef = useRef<ModalProps>(null);
 	const infoRef = useRef<ModalProps>(null);
 
 	// 退出登录
@@ -49,7 +49,7 @@ const AvatarIcon = (props: any) => {
 				{
 					key: "3",
 					label: <span className="dropdown-item">修改密码</span>,
-					onClick: () => passRef.current!.showModal({ name: 11 })
+					onClick: () => passwdRef.current!.showModal({ name: 11 })
 				},
 				{
 					type: "divider"
@@ -68,7 +68,7 @@ const AvatarIcon = (props: any) => {
 				<Avatar size="large" src={avatar} />
 			</Dropdown>
       <InfoModal innerRef={infoRef}></InfoModal>
-      <PasswordModal innerRef={passRef}></PasswordModal>
+      <PasswordModal innerRef={passwdRef}></PasswordModal>
 		</>
 	);
 };
