@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom'
 import React, { useState } from 'react'
 import { Layout, theme } from 'antd'
-import './MainLayout.css'
+import './MainLayout.less'
 import { SideMenu } from '@/layouts/Menu'
 import LayoutHeader from '@/layouts/Header'
 
