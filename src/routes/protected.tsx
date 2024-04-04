@@ -1,4 +1,4 @@
-import { MainLayout } from '@/layouts/MainLayout.tsx'
+import MainLayout from '@/layouts/MainLayout.tsx'
 import { Secret } from '@/pages/secret'
 import Dashboard from '@/pages/dashboard/Dashboard.tsx'
 import { Navigate } from 'react-router-dom'
