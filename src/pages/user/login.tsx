@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
-export const LoginPage = () => {
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
+export const Login = () => {
+  const [username, setUsername] = useState("user");
+  const [password, setPassword] = useState("password");
   const { login } = useAuth();
   const handleLogin = async (e) => {
     e.preventDefault();
