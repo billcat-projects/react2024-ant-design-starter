@@ -1,9 +1,9 @@
-import MainLayout from '@/layouts/MainLayout.tsx'
 import { Secret } from '@/pages/secret'
 import Dashboard from '@/pages/dashboard/Dashboard.tsx'
 import { Navigate, Outlet } from 'react-router-dom'
 import IconsPage from '@/pages/showcase/icons'
 import FormsPage from '@/pages/showcase/forms'
+import AdminLayout from '@/layouts/admin/Layout.tsx'
 
 export const menuList = [
   {
@@ -47,14 +47,16 @@ export const menuList = [
         }
       },
     ]
-  },
-  { path: '*', element: <Navigate to="." /> },
+  }
 ]
 
 export const protectedRoutes = [
   {
     path: '',
-    element: <MainLayout menuList={menuList}/>,
-    children: menuList,
+    element: <AdminLayout menuList={menuList} />,
+    children: [
+      ...menuList,
+      { path: '*', element: <Navigate to="." /> }
+    ],
   },
 ]

@@ -1,13 +1,13 @@
 import { Outlet } from 'react-router-dom'
 import React, { useState } from 'react'
 import { Layout, theme } from 'antd'
-import './MainLayout.less'
-import { SideMenu } from '@/layouts/Menu'
-import LayoutHeader from '@/layouts/Header'
+import './Layout.less'
+import { SideMenu } from '@/layouts/admin/SideMenu'
+import LayoutHeader from '@/layouts/admin/Header'
 
 const { Content } = Layout
 
-const MainLayout: React.FC = ({ menuList }) => {
+const AdminLayout: React.FC = ({ menuList }) => {
   const [collapsed, setCollapsed] = useState(false)
   const {
     token: { colorBgContainer, borderRadiusLG },
@@ -34,4 +34,4 @@ const MainLayout: React.FC = ({ menuList }) => {
   )
 }
 
-export default MainLayout
+export default AdminLayout

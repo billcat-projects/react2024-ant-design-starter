@@ -1,7 +1,7 @@
 import { MenuFoldOutlined, MenuUnfoldOutlined, } from '@ant-design/icons'
 import { Button, Layout } from 'antd'
-import Fullscreen from '@/layouts/Header/components/Fullscreen.tsx'
-import AvatarIcon from '@/layouts/Header/components/AvatarIcon.tsx'
+import Fullscreen from './components/Fullscreen.tsx'
+import AvatarIcon from './components/AvatarIcon.tsx'
 
 const { Header } = Layout
 
