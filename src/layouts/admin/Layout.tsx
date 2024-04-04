@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Layout, theme } from 'antd'
 import './Layout.less'
 import { SideMenu } from '@/layouts/admin/SideMenu'
-import LayoutHeader from '@/layouts/admin/Header'
+import MyHeader from '@/layouts/admin/Header'
 
 const { Content } = Layout
 
@@ -17,7 +17,7 @@ const AdminLayout: React.FC = ({ menuList }) => {
     <Layout style={{ minHeight: '100vh' }}>
       <SideMenu collapsed={collapsed} setCollapsed={setCollapsed} menuList={menuList} />
       <Layout>
-        <LayoutHeader collapsed={collapsed} setCollapsed={setCollapsed} colorBgContainer={colorBgContainer} />
+        <MyHeader collapsed={collapsed} setCollapsed={setCollapsed} colorBgContainer={colorBgContainer} />
         <Content
           style={{
             margin: '24px 16px',

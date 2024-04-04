@@ -4,6 +4,18 @@ import { Navigate, Outlet } from 'react-router-dom'
 import IconsPage from '@/pages/showcase/icons'
 import FormsPage from '@/pages/showcase/forms'
 import AdminLayout from '@/layouts/admin/Layout.tsx'
+import { Login } from '@/pages/user/login.tsx'
+
+export const publicRoutes = [
+  {
+    path: '/login',
+    element: <Login/>,
+  },
+  {
+    path: '*',
+    element: <Navigate to="/login"/>,
+  },
+];
 
 export const menuList = [
   {
@@ -50,7 +62,7 @@ export const menuList = [
   }
 ]
 
-export const protectedRoutes = [
+export const adminRoutes = [
   {
     path: '',
     element: <AdminLayout menuList={menuList} />,

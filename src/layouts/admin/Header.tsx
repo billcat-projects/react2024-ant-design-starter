@@ -5,7 +5,7 @@ import AvatarIcon from './components/AvatarIcon.tsx'
 
 const { Header } = Layout
 
-export default function LayoutHeader({collapsed, setCollapsed, colorBgContainer}) {
+export default function MyHeader({collapsed, setCollapsed, colorBgContainer}) {
   return (
     <Header style={{ background: colorBgContainer }}>
       <div className="header-lf">
