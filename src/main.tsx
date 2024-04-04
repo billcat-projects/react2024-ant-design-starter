@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
+import "@/assets/iconfont/iconfont.less";
+import "@/assets/fonts/font.less";
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 
