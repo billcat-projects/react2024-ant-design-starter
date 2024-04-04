@@ -1,29 +1,33 @@
+/* 左上角占位 logo */
 .demo-logo-vertical {
   height: 32px;
   margin: 16px;
-  background: rgba(255,255,255,.2);
+  background: rgba(255, 255, 255, .2);
   border-radius: 6px;
 }
 
-
+/* header 的样式 */
 .ant-layout-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 55px;
-  padding: 0 40px 0 20px;
+  height: 55px; /* 减少高度 */
+  padding: 0 40px 0 20px; /* 左右各加一些 padding */
   background-color: #fff !important;
   border-color: #f6f6f6 !important;
 
-  .btn-on-header{
+  .btn-on-header {
     &:hover, &:active {
-      background: none !important;
+      background: none !important; /* 鼠标浮在 header的小图标上不要有高亮效果 */
     }
   }
+
+  /* header 左侧图标 */
 
   .header-lf {
     display: flex;
     align-items: center;
+
     .collapsed {
       margin-right: 20px;
       font-size: 18px;
@@ -31,19 +35,25 @@
       transition: color 0.3s;
     }
   }
+
+  /* header 右侧图标 */
+
   .header-ri {
     display: flex;
     align-items: center;
+
     .icon-style {
       margin-right: 22px;
       font-size: 19px;
       line-height: 19px;
       cursor: pointer;
     }
+
     .username {
       margin: 0 20px 0 0;
       font-size: 15px;
     }
+
     .ant-avatar {
       cursor: pointer;
     }
