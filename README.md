@@ -23,9 +23,9 @@ pnpm run dev
 
 ## Issues and comments
 
-Any suggestions are welcome. Please leave your comments and suggestions in the issues area, I will check them periodically.
+Leave your comments and suggestions in the issues area. For example, if you want a slightly different tech stack.
 
-If you like my demo, please consider buying me a coffee! Thanks.
+Also, if you like my demo, ~~please consider buying me a coffee~~. Please follow and star :).
 
 ## License
 
