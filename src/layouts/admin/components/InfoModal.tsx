@@ -19,14 +19,14 @@ const InfoModal = (props: Props) => {
 
 	const handleOk = () => {
 		setModalVisible(false);
-		message.success("修改用户信息成功 🎉🎉🎉");
+		message.success("User info is updated successfully 🎉🎉🎉");
 	};
 
 	const handleCancel = () => {
 		setModalVisible(false);
 	};
 	return (
-		<Modal title="个人信息" visible={modalVisible} onOk={handleOk} onCancel={handleCancel} destroyOnClose={true}>
+		<Modal title="Personal Info." visible={modalVisible} onOk={handleOk} onCancel={handleCancel} destroyOnClose={true}>
 			<p>User Info...</p>
 			<p>User Info...</p>
 			<p>User Info...</p>

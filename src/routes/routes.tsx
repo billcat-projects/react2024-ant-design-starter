@@ -30,7 +30,7 @@ export const menuList = [
     path: '/secret', element: <Secret />,
     meta: {
       requiresAuth: true,
-      label: 'Secrets',
+      label: 'Products',
       icon: 'ShoppingOutlined'
     }
   },

@@ -14,7 +14,7 @@ const Theme = () => {
         }}
       ></i>
       <Drawer
-        title="布局设置"
+        title="Layout"
         closable={false}
         onClose={() => {
           setVisible(false)
@@ -22,31 +22,31 @@ const Theme = () => {
         visible={visible}
         width={320}
       >
-        {/* 全局主题 */}
+        {/* Global Theme */}
         <Divider className="divider">
           <FireOutlined />
-          全局主题
+          Global Theme
         </Divider>
         <div className="theme-item">
-          <span>暗黑模式</span>
+          <span>Dark mode</span>
         </div>
         <div className="theme-item">
-          <span>灰色模式</span>
+          <span>Gray mode</span>
           <Switch
           />
         </div>
         <div className="theme-item">
-          <span>色弱模式</span>
+          <span>Color Weakness Mode</span>
           <Switch />
         </div>
         <br />
-        {/* 界面设置 */}
+        {/* UI Settings */}
         <Divider className="divider">
           <SettingOutlined />
-          界面设置
+          UI Settings
         </Divider>
         <div className="theme-item">
-          <span>折叠菜单</span>
+          <span>Collapse Menu</span>
           <Switch />
         </div>
       </Drawer>
